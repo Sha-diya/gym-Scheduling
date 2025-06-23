@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: gym-api
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn gym_backend.wsgi:application"
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        value: "django-insecure-sq1+g!_1%nx1cl+oawadmvmvh@fp&*i#x-9y#o^u@4(%*k)x8$"
+      
