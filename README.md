@@ -18,7 +18,7 @@ This Django-based backend system allows gym admins to create class schedules, as
 
 ## 🧩 Relation Diagram
 
-You can view the relation diagram [here](https://dbdiagram.io/d/68599abdf039ec6d3685961f)
+You can view the relation diagram [here](https://dbdiagram.io/d/Gym-Scheduling-68599abdf039ec6d3685961f)
 
 ---
 
