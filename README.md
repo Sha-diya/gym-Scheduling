@@ -27,7 +27,7 @@ You can view the relation diagram [here](https://dbdiagram.io/d/Gym-Scheduling-6
 - **Backend**: Django, Django REST Framework
 - **Authentication**: JWT (`djangorestframework-simplejwt`)
 - **Database**: SQLite (for demo), PostgreSQL recommended for production
-- **Deployment**: [Render](https://render.com)
+- **Deployment**: Render
 - **API Tool**: Postman
 
 ---
@@ -116,7 +116,7 @@ python manage.py runserver
 python manage.py createsuperuser
 ```
 ## 🌐 Live Hosting Link
-[🔗 Live API on Render](https://gym-scheduling-1.onrender.com/)
+[🔗 Live API on Render](https://gym-scheduling-1.onrender.com)
 
 ## 📥 Download Postman Collection
 You can [download the Postman collection](./postman_collection.json) and import it into Postman.
