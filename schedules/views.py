@@ -1,9 +1,10 @@
+# schedules/views.py
 from rest_framework import generics, permissions, status
 from rest_framework.response import Response
+from rest_framework.exceptions import ValidationError
 from .models import Schedule
 from .serializers import ScheduleSerializer
-from rest_framework.exceptions import ValidationError
-from users.models import User
+from datetime import datetime, timedelta
 
 class IsAdmin(permissions.BasePermission):
     def has_permission(self, request, view):
@@ -18,18 +19,25 @@ class ScheduleListCreateView(generics.ListCreateAPIView):
             return [IsAdmin()]
         return [permissions.IsAuthenticated()]
 
+    def get_queryset(self):
+        user = self.request.user
+        if user.role == 'trainer':
+            return Schedule.objects.filter(trainer=user)
+        return Schedule.objects.all()
+
     def perform_create(self, serializer):
-        today = serializer.validated_data['date']
-        count_today = Schedule.objects.filter(date=today).count()
-        if count_today >= 5:
-            raise ValidationError({
-                "success": False,
-                "message": "Schedule limit exceeded.",
-                "errorDetails": {
-                    "field": "date",
-                    "message": "Cannot create more than 5 schedules per day."
-                }
-            })
+        start = serializer.validated_data['start_time']
+        end = serializer.validated_data['end_time']
+        date = serializer.validated_data['date']
+
+        if Schedule.objects.filter(date=date).count() >= 5:
+            raise ValidationError({"message": "Cannot schedule more than 5 classes per day."})
+
+        start_dt = datetime.combine(datetime.today(), start)
+        end_dt = datetime.combine(datetime.today(), end)
+        if end_dt - start_dt != timedelta(hours=2):
+            raise ValidationError({"message": "Each class must last exactly 2 hours."})
+
         serializer.save()
 
     def create(self, request, *args, **kwargs):

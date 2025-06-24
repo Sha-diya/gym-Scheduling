@@ -1,6 +1,6 @@
+# schedules/serializers.py
 from rest_framework import serializers
 from .models import Schedule
-from users.models import User
 
 class ScheduleSerializer(serializers.ModelSerializer):
     trainer_name = serializers.ReadOnlyField(source='trainer.username')
@@ -8,3 +8,4 @@ class ScheduleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Schedule
         fields = ['id', 'date', 'start_time', 'end_time', 'trainer', 'trainer_name']
+
