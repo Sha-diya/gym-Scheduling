@@ -18,7 +18,7 @@
           "raw": "{\n  \"username\": \"shadia_admin\",\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"securePass123\",\n  \"role\": \"admin\"\n}"
         },
         "url": {
-          "raw": "http://127.0.0.1:8000/api/users/register/",
+          "raw": "https://gym-scheduling-1.onrender.com/api/users/register/",
           "protocol": "http",
           "host": ["127.0.0.1"],
           "port": "8000",
@@ -38,7 +38,7 @@
           "raw": "{\n  \"username\": \"shadia_admin\",\n  \"password\": \"securePass123\"\n}"
         },
         "url": {
-          "raw": "http://127.0.0.1:8000/api/token/",
+          "raw": "https://gym-scheduling-1.onrender.com/api/token/",
           "protocol": "http",
           "host": ["127.0.0.1"],
           "port": "8000",
@@ -58,7 +58,7 @@
           "raw": "{\n  \"refresh\": \"<your_refresh_token_here>\"\n}"
         },
         "url": {
-          "raw": "http://127.0.0.1:8000/api/token/refresh/",
+          "raw": "https://gym-scheduling-1.onrender.com/api/token/refresh/",
           "protocol": "http",
           "host": ["127.0.0.1"],
           "port": "8000",
@@ -79,7 +79,7 @@
           "raw": "{\n  \"date\": \"2025-06-24\",\n  \"start_time\": \"10:00:00\",\n  \"end_time\": \"12:00:00\",\n  \"trainer\": 2\n}"
         },
         "url": {
-          "raw": "http://127.0.0.1:8000/api/schedules/",
+          "raw": "https://gym-scheduling-1.onrender.com/api/schedules/",
           "protocol": "http",
           "host": ["127.0.0.1"],
           "port": "8000",
@@ -95,7 +95,7 @@
           { "key": "Authorization", "value": "Bearer <access_token>" }
         ],
         "url": {
-          "raw": "http://127.0.0.1:8000/api/schedules/",
+          "raw": "https://gym-scheduling-1.onrender.com/api/schedules/",
           "protocol": "http",
           "host": ["127.0.0.1"],
           "port": "8000",
@@ -116,7 +116,7 @@
           "raw": "{\n  \"schedule\": 1,\n  \"trainee\": 3\n}"
         },
         "url": {
-          "raw": "http://127.0.0.1:8000/api/bookings/",
+          "raw": "https://gym-scheduling-1.onrender.com/api/bookings/",
           "protocol": "http",
           "host": ["127.0.0.1"],
           "port": "8000",
@@ -132,7 +132,7 @@
           { "key": "Authorization", "value": "Bearer <access_token>" }
         ],
         "url": {
-          "raw": "http://127.0.0.1:8000/api/bookings/",
+          "raw": "https://gym-scheduling-1.onrender.com/api/bookings/",
           "protocol": "http",
           "host": ["127.0.0.1"],
           "port": "8000",
