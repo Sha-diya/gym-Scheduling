@@ -74,4 +74,36 @@ Email: admin@gmail.com
 Password: securePass123  
 ```
 
-Live view: https://gym-scheduling-1.onrender.com/
+## 🖥️ Instructions to Run Locally
+1. Clone the project
+```python
+git clone https://github.com/your-username/gym-api.git
+cd gym-api
+```
+2. Create virtual environment
+```python
+python -m venv env
+source env/bin/activate  # or `env\Scripts\activate` on Windows
+```
+3. Install dependencies
+```python
+pip install -r requirements.txt
+```
+4. Run migrations
+```python
+python manage.py makemigrations
+python manage.py migrate
+```
+5. Run the server
+```python
+python manage.py runserver
+```
+6. (Optional) Create superuser
+```python
+python manage.py createsuperuser
+```
+## 🌐 Live Hosting Link
+[🔗 Live API on Render](https://gym-scheduling-1.onrender.com/)
+
+## 📥 Download Postman Collection
+You can [download the Postman collection](./postman_collection.json) and import it into Postman.
