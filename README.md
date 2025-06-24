@@ -69,7 +69,7 @@ You can view the relation diagram [here](https://dbdiagram.io/d/Gym-Scheduling-6
 
 All available API endpoints and their usage are documented here:
 
-👉 [**Postman API Documentation**](https://documenter.getpostman.com/view/46111276/2sB2xChpTd)
+👉 [**Postman API Documentation**](https://documenter.getpostman.com/view/46111276/2sB2xCi9V2)
 
 This documentation includes:
 - Authentication (Login, Token Refresh)
