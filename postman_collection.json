@@ -15,9 +15,8 @@
         },
         "url": {
           "raw": "https://gym-scheduling-1.onrender.com/api/users/register/",
-          "protocol": "http",
-          "host": ["127.0.0.1"],
-          "port": "8000",
+          "protocol": "https",
+          "host": ["gym-scheduling-1", "onrender", "com"],
           "path": ["api", "users", "register", ""]
         }
       }
@@ -33,9 +32,8 @@
         },
         "url": {
           "raw": "https://gym-scheduling-1.onrender.com/api/users/login/",
-          "protocol": "http",
-          "host": ["127.0.0.1"],
-          "port": "8000",
+          "protocol": "https",
+          "host": ["gym-scheduling-1", "onrender", "com"],
           "path": ["api", "users", "login", ""]
         }
       }
@@ -44,14 +42,11 @@
       "name": "Get My Profile",
       "request": {
         "method": "GET",
-        "header": [
-          { "key": "Authorization", "value": "Bearer {{access_token}}" }
-        ],
+        "header": [{ "key": "Authorization", "value": "Bearer {{access_token}}" }],
         "url": {
           "raw": "https://gym-scheduling-1.onrender.com/api/users/me/",
-          "protocol": "http",
-          "host": ["127.0.0.1"],
-          "port": "8000",
+          "protocol": "https",
+          "host": ["gym-scheduling-1", "onrender", "com"],
           "path": ["api", "users", "me", ""]
         }
       }
@@ -70,9 +65,8 @@
         },
         "url": {
           "raw": "https://gym-scheduling-1.onrender.com/api/schedules/",
-          "protocol": "http",
-          "host": ["127.0.0.1"],
-          "port": "8000",
+          "protocol": "https",
+          "host": ["gym-scheduling-1", "onrender", "com"],
           "path": ["api", "schedules", ""]
         }
       }
@@ -81,14 +75,11 @@
       "name": "List Schedules",
       "request": {
         "method": "GET",
-        "header": [
-          { "key": "Authorization", "value": "Bearer {{access_token}}" }
-        ],
+        "header": [{ "key": "Authorization", "value": "Bearer {{access_token}}" }],
         "url": {
           "raw": "https://gym-scheduling-1.onrender.com/api/schedules/",
-          "protocol": "http",
-          "host": ["127.0.0.1"],
-          "port": "8000",
+          "protocol": "https",
+          "host": ["gym-scheduling-1", "onrender", "com"],
           "path": ["api", "schedules", ""]
         }
       }
@@ -107,9 +98,8 @@
         },
         "url": {
           "raw": "https://gym-scheduling-1.onrender.com/api/bookings/",
-          "protocol": "http",
-          "host": ["127.0.0.1"],
-          "port": "8000",
+          "protocol": "https",
+          "host": ["gym-scheduling-1", "onrender", "com"],
           "path": ["api", "bookings", ""]
         }
       }
@@ -118,14 +108,11 @@
       "name": "List My Bookings",
       "request": {
         "method": "GET",
-        "header": [
-          { "key": "Authorization", "value": "Bearer {{trainee_access_token}}" }
-        ],
+        "header": [{ "key": "Authorization", "value": "Bearer {{trainee_access_token}}" }],
         "url": {
           "raw": "https://gym-scheduling-1.onrender.com/api/bookings/",
-          "protocol": "http",
-          "host": ["127.0.0.1"],
-          "port": "8000",
+          "protocol": "https",
+          "host": ["gym-scheduling-1", "onrender", "com"],
           "path": ["api", "bookings", ""]
         }
       }
