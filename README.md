@@ -65,6 +65,19 @@ You can view the relation diagram [here](https://dbdiagram.io/d/Gym-Scheduling-6
 
 ---
 
+## 📌 API Endpoints
+
+All available API endpoints and their usage are documented here:
+
+👉 [**Postman API Documentation**](https://documenter.getpostman.com/view/46111276/2sB2xChV45)
+
+This documentation includes:
+- Authentication (Login, Token Refresh)
+- User registration and role-based access
+- Schedule creation and viewing
+- Booking classes by trainees
+- Admin-only and role-specific actions
+
 ## 🧑‍💼 Admin Credentials
 
 Use this to test admin-level features:
