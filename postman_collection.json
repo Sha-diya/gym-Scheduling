@@ -94,7 +94,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"schedule\": {{Schedule_id}},\n \"trainee\": {{id_of_trainee}"
+          "raw": "{\n  \"schedule\": {{Schedule_id}},\n \"trainee\": {{id_of_trainee}} \n}"
         },
         "url": {
           "raw": "https://gym-scheduling-1.onrender.com/api/bookings/",
